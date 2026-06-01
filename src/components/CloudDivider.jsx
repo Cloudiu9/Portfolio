@@ -11,8 +11,8 @@ export default function ShapeDivider({ opacity = "0.5" }) {
           to   { transform: translateX(6%); }
         }
         @keyframes cloudDrift3 {
-          from { transform: translateX(-1%); }
-          to   { transform: translateX(-6%); }
+          from { transform: translateX(3%); }
+          to   { transform: translateX(-4%); }
         }
         .cloud-l1 { animation: cloudDrift1 12s ease-in-out infinite alternate; }
         .cloud-l2 { animation: cloudDrift2 9s  ease-in-out infinite alternate; }

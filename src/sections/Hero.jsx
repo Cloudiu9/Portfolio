@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <>
-      <div className="grid  grid-cols-1 min-[1034px]:grid-cols-2 gap-4 my-20 min-h-150 text-left place-items-center ">
+      <div className="grid  grid-cols-1 min-[1034px]:grid-cols-2 gap-4 my-20 min-h-150 text-left place-items-center">
         <div className="text-3xl mb-12 max-w-lg rounded-3xl bg-white/10 p-8 shadow-2xl ring-1 ring-white/10 backdrop-blur-lg">
           <div className="font-bold text-5xl text-[rgba(99,159,3)] text-sky-850 text-shadow-sm ">
             Claudiu Bordea
