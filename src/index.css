@@ -22,15 +22,10 @@
 }
 
 @keyframes floatPill {
-  0% {
-    transform: translate(0px, 0px);
+  from {
+    transform: translateX(0px);
   }
-  50% {
-    /* Se mișcă puțin la dreapta și în sus */
-    transform: translate(2px, -1px);
-  }
-  100% {
-    /* Revine pe X, dar urcă mai sus pe Y pentru a crea o curbă */
-    transform: translate(-1px, -3px);
+  to {
+    transform: translateX(-4px);
   }
 }

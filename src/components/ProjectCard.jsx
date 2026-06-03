@@ -13,7 +13,7 @@ export default function ProjectCard({ project }) {
               style={{
                 animation: `floatPill ${2.4 + idx * 0.3}s ease-in-out infinite alternate`,
               }}
-              className="bg-sky-900/60 text-sky-200 border border-sky-400/30 rounded-[40%_60%_60%_40%/40%_40%_60%_60%] px-3 py-1 text-xs font-medium"
+              className="bg-sky-200/60 text-sky-100 border border-sky-300/30 rounded-[40%_60%_50%_40%/40%_40%_50%_50%] px-3 py-1 text-xs font-medium"
             >
               {tech}
             </span>
@@ -23,20 +23,19 @@ export default function ProjectCard({ project }) {
 
       {/* 'mt-auto' locks it to the exact same starting line across all cards */}
       <img
-        src="/api/placeholder/400/225"
+        src={project.image}
         alt={project.title}
-        className="mt-6 aspect-video object-cover rounded-xl w-full"
+        className="mt-2 aspect-video object-cover rounded-xl w-full"
       />
-
       <div className="flex gap-4 justify-center mt-4">
         <a
-          href="#"
+          href={project.links[1].demo}
           className="bg-sky-900 hover:bg-sky-700 text-white px-4 py-2 rounded-lg font-medium transition-colors"
         >
           Live Demo
         </a>
         <a
-          href="#"
+          href={project.links[0].github}
           className="bg-sky-900 hover:bg-slate-800 text-white px-4 py-2 rounded-lg font-medium transition-colors"
         >
           GitHub
