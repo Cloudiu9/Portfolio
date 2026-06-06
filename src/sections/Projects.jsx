@@ -1,4 +1,8 @@
 import ProjectCard from "../components/ProjectCard";
+import scraperImg from "../assets/scraper.png";
+import movieImg from "../assets/movieflix.png";
+import memoryImg from "../assets/memory-card-league.png";
+import shoppingImg from "../assets/shopping-cart.png";
 
 export default function Projects() {
   const projects = [
@@ -20,7 +24,7 @@ export default function Projects() {
         { github: "https://github.com/Cloudiu9/Disertatie" },
         { demo: "https://disertatie-frontend.vercel.app/" },
       ],
-      image: "src/assets/movieflix.png",
+      image: movieImg,
     },
     {
       title: "Memory Card League",
@@ -31,7 +35,7 @@ export default function Projects() {
         { github: "github.com/Cloudiu9/MemoryCard" },
         { demo: "https://memorycardleague.netlify.app/" },
       ],
-      image: "src/assets/memory-card-league.png",
+      image: memoryImg,
     },
     {
       title: "Shopping Cart",
@@ -42,7 +46,7 @@ export default function Projects() {
         { github: "github.com/Cloudiu9/Shopping-Cart" },
         { demo: "https://shopping-cart-tau-khaki.vercel.app/" },
       ],
-      image: "src/assets/shopping-cart.png",
+      image: shoppingImg,
     },
     {
       title: "WebScraperLLM",
@@ -53,7 +57,8 @@ export default function Projects() {
         { github: "https://github.com/Cloudiu9/WebScraperLLM" },
         { demo: "https://github.com/Cloudiu9/WebScraperLLM" },
       ],
-      image: "src/assets/scraper.png",
+      // bg-[url('./assets/Eu.png')]
+      image: scraperImg,
     },
   ];
 
