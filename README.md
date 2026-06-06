@@ -1,16 +1,36 @@
-# React + Vite
+# Claudiu Bordea — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio site built with React, Vite, and Tailwind CSS.
+Live at:
 
-Currently, two official plugins are available:
+## About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+A sky/cloud-themed portfolio showcasing my projects, skills, and background
+as a front-end developer, the aesthetic being a play on my name (Claudiu → Cloud).
 
-## React Compiler
+## Built With
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- Tailwind CSS
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Responsive single-page layout
+- Animated cloud SVG section divider
+- Frosted glass project cards with floating tech stack pills
+- Project showcase with live demo and GitHub links
+
+## Projects Featured
+
+- **MovieFlix** — Full-stack ML-powered movie recommendation platform (Master's dissertation)
+- **MemoryCardLeague** — React memory card game built during The Odin Project
+- **ShoppingCart** — React e-commerce UI
+- **WebScraperLLM** — Political speech scraper with LLM processing (university project)
+
+## Running Locally
+
+```bash
+npm install
+npm run dev
+```
