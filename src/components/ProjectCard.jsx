@@ -1,7 +1,7 @@
 export default function ProjectCard({ project }) {
   return (
     // 'flex flex-col h-full' makes all cards equal height and align items
-    <div className="bg-sky-600/80 border border-white/10 rounded-2xl hover:bg-white/10 p-6 flex flex-col h-full shadow-lg backdrop-blur-sm">
+    <div className="bg-white/10 border border-white/10 rounded-2xl hover:bg-white/15 p-6 flex flex-col h-full shadow-sm shadow-indigo-100">
       {/* 'flex-grow' ensures this takes up available space, pushing down the image */}
       <div className="grow">
         <h2 className="text-2xl font-bold mb-2">{project.title}</h2>

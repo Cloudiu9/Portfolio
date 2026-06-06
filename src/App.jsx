@@ -13,6 +13,7 @@ export default function App() {
         <Hero />
         <CloudDivider />
         <About />
+        <CloudDivider />
         <Projects />
         <Contact />
       </div>

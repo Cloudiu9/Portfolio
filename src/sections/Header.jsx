@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 export default function Header() {
   return (
     <>
-      <header className="sticky top-0 z-50 text-2xl shadow-2xl shadow-indigo-400">
+      <header className="sticky top-0 z-50 text-2xl">
         <nav className="right-0 left-0 backdrop-blur-2xl">
           <ul className="flex gap-4 max-[602px]:gap-1 justify-between mx-4 tracking-widest flex-wrap">
             <li className="mr-auto">Bordea Claudiu</li>

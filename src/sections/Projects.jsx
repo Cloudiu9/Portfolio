@@ -32,7 +32,7 @@ export default function Projects() {
         "A React memory card game built as part of The Odin Project coursework. Picks a random set of League of Legends champions across three difficulty levels and reshuffles the deck on every click. Built to practice hooks and state management.",
       tech: ["React", "JavaScript", "Tailwind CSS"],
       links: [
-        { github: "github.com/Cloudiu9/MemoryCard" },
+        { github: "https://github.com/Cloudiu9/MemoryCard" },
         { demo: "https://memorycardleague.netlify.app/" },
       ],
       image: memoryImg,
@@ -43,7 +43,7 @@ export default function Projects() {
         "A React e-commerce UI with a working cart, product browsing, and quantity management. Focused on component architecture and state flow.",
       tech: ["React", "JavaScript", "Tailwind CSS"],
       links: [
-        { github: "github.com/Cloudiu9/Shopping-Cart" },
+        { github: "https://github.com/Cloudiu9/Shopping-Cart" },
         { demo: "https://shopping-cart-tau-khaki.vercel.app/" },
       ],
       image: shoppingImg,
