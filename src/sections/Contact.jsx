@@ -12,8 +12,7 @@ export default function Contact() {
 
       <div className="flex justify-center mb-12">
         <h2 className="max-w-3xl text-3xl font-semibold leading-tight text-white md:text-5xl">
-          Interested in collaborative projects, front-end development, or modern
-          web applications.
+          Interested in learning and practicing on real, useful web projects.
         </h2>
       </div>
 
