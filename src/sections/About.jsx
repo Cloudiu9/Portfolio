@@ -2,7 +2,7 @@ import { BrainCircuit, Cloud, Code2, Radar } from "lucide-react";
 
 export default function About() {
   return (
-    <section id="about" className="py-24 px-10">
+    <section id="about" className="py-24 md:px-10">
       {/* Header */}
       <div className="mb-16">
         <p className="mb-3 text-sm text-sky-300 uppercase tracking-[0.5em]">
@@ -10,7 +10,7 @@ export default function About() {
         </p>
       </div>
       <div className="flex justify-center mb-12">
-        <h2 className="max-w-3xl text-3xl font-semibold leading-tight text-white md:text-5xl">
+        <h2 className="text-3xl font-semibold leading-tight text-white md:text-5xl">
           Building clean interfaces, interactive systems, and projects with real
           functionality.
         </h2>
@@ -26,7 +26,7 @@ export default function About() {
 
           <div className="space-y-6 text-gray-300 leading-relaxed">
             <p>
-              I focus on front-end development with React and TypeScript, while
+              I focus on front-end development with React and JavaScript, while
               also building full-stack systems involving Flask APIs,
               recommendation logic, and data-driven features.
             </p>
@@ -46,7 +46,7 @@ export default function About() {
           {/* Stats */}
           <div className="mt-10 grid gap-4 sm:grid-cols-3">
             {[
-              ["Frontend", "React + TS"],
+              ["Frontend", "React + JS"],
               ["Backend", "Flask APIs"],
               ["Focus", "UX + Systems"],
             ].map(([title, value]) => (
@@ -68,7 +68,7 @@ export default function About() {
               icon: <Radar className="text-sky-300" size={20} />,
               title: "Current Atmosphere",
               items: [
-                "React + TypeScript",
+                "React + JavaScript",
                 "Tailwind CSS",
                 "Flask + MongoDB",
                 "Recommendation Systems",

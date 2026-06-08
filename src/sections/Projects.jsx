@@ -65,7 +65,7 @@ export default function Projects() {
   return (
     <div
       id="projects"
-      className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto"
+      className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto my-16"
     >
       {projects.map((project, idx) => (
         <ProjectCard project={project} key={idx} />

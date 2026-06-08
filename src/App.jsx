@@ -15,6 +15,7 @@ export default function App() {
         <About />
         <CloudDivider />
         <Projects />
+        <CloudDivider />
         <Contact />
       </div>
     </div>
