@@ -3,13 +3,15 @@ import scraperImg from "../assets/scraper.png";
 import movieImg from "../assets/movieflix.png";
 import memoryImg from "../assets/memory-card-league.png";
 import shoppingImg from "../assets/shopping-cart.png";
+import jobListingImg from "../assets/job-listing.png";
+import typingSpeedImg from "../assets/typing-speed.png";
 
 export default function Projects() {
   const projects = [
     {
       title: "MovieFlix",
       description:
-        "Full-stack movie and TV recommendation platform — my Master's dissertation. Catalogues 4,000+ titles and serves hybrid ML recommendations (content-based, collaborative, cold-start). Built with React, TypeScript, Tailwind CSS, Flask, and MongoDB Atlas.",
+        "Full-stack movie and TV recommendation platform; my Master's dissertation. Catalogues 4,000+ titles and serves hybrid ML recommendations (content-based, collaborative, cold-start). Built with React, TypeScript, Tailwind CSS, Flask, and MongoDB Atlas. Takes ~20s to boot up on launch.",
       tech: [
         "React",
         "TypeScript",
@@ -25,6 +27,34 @@ export default function Projects() {
         { demo: "https://disertatie-frontend.vercel.app/" },
       ],
       image: movieImg,
+    },
+    {
+      title: "Job Listings",
+      description:
+        "A job listings platform built with Next.js, TypeScript, Tailwind CSS, and Redux Toolkit. Features multi-tag filtering, global filter state management, and animated layout updates using Framer Motion.",
+      tech: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Redux Toolkit",
+        "Framer Motion",
+      ],
+      links: [
+        { github: "https://github.com/Cloudiu9/job-listings" },
+        { demo: "https://job-listings-chi-ten.vercel.app/" },
+      ],
+      image: jobListingImg,
+    },
+    {
+      title: "Typing Speed Test",
+      description:
+        "A responsive typing speed test built with TypeScript and Tailwind CSS. Features multiple difficulty levels and modes, real-time WPM and accuracy tracking, mistake correction, keyboard handling, and persistent settings using localStorage.",
+      tech: ["TypeScript", "Tailwind CSS", "Vitest", "localStorage"],
+      links: [
+        { github: "https://github.com/Cloudiu9/TypingSpeed" },
+        { demo: "https://typingspeed-cyan.vercel.app/" },
+      ],
+      image: typingSpeedImg,
     },
     {
       title: "Memory Card League",
@@ -53,10 +83,7 @@ export default function Projects() {
       description:
         "A university course project that scraped and structured over a decade of political speeches (Jan 2014 - Nov 2024) using Selenium and BeautifulSoup, with a Streamlit UI and optional LLM processing for structured JSON output.",
       tech: ["Python", "Selenium", "Beautiful Soup", "Streamlit", "Groq"],
-      links: [
-        { github: "https://github.com/Cloudiu9/WebScraperLLM" },
-        { demo: "https://github.com/Cloudiu9/WebScraperLLM" },
-      ],
+      links: [{ github: "https://github.com/Cloudiu9/WebScraperLLM" }],
       // bg-[url('./assets/Eu.png')]
       image: scraperImg,
     },

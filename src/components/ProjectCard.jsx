@@ -28,12 +28,14 @@ export default function ProjectCard({ project }) {
         className="mt-2 aspect-video object-cover rounded-xl w-full"
       />
       <div className="flex gap-4 justify-center mt-4">
-        <a
-          href={project.links[1].demo}
-          className="bg-sky-900 hover:bg-sky-700 text-white px-4 py-2 rounded-lg font-medium transition-colors"
-        >
-          Live Demo
-        </a>
+        {project.links[1]?.demo && (
+          <a
+            href={project.links[1].demo}
+            className="bg-sky-900 hover:bg-sky-700 text-white px-4 py-2 rounded-lg font-medium transition-colors"
+          >
+            Live Demo
+          </a>
+        )}
         <a
           href={project.links[0].github}
           className="bg-sky-900 hover:bg-slate-800 text-white px-4 py-2 rounded-lg font-medium transition-colors"
