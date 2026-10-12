@@ -5,6 +5,7 @@ import Hero from "./sections/Hero";
 import Projects from "./sections/Projects";
 import CloudDivider from "./components/CloudDivider";
 import Atmosphere from "./components/Atmosphere";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function App() {
   return (
@@ -31,6 +32,7 @@ export default function App() {
 
         <Contact />
       </main>
+      <Analytics />
     </div>
   );
 }
