@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
 .custom-shape-divider-top-1780057257 {
   position: absolute;
   top: 0;
@@ -106,5 +110,16 @@
 
   100% {
     transform: translate(0px, 0px);
+  }
+}
+
+/* Respect users who ask their OS to reduce motion;
+   turns off the drifting clouds, wave dividers and floating pills. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition-duration: 0.01ms !important;
   }
 }

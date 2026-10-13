@@ -1,102 +1,85 @@
 import ProjectCard from "../components/ProjectCard";
 import scraperImg from "../assets/scraper.png";
 import movieImg from "../assets/movieflix.png";
-import memoryImg from "../assets/memory-card-league.png";
-import shoppingImg from "../assets/shopping-cart.png";
 import jobListingImg from "../assets/job-listing.png";
 import typingSpeedImg from "../assets/typing-speed.png";
 
+const projects = [
+  {
+    title: "MovieFlix",
+    label: "Featured · Master's dissertation",
+    description:
+      "A full-stack movie and TV recommendation platform with 4,000+ titles. Combines content-based and collaborative filtering to handle new users, with AI-generated explanations and JWT authentication.",
+    tech: ["React", "TypeScript", "Flask", "MongoDB", "scikit-learn", "JWT"],
+    github: "https://github.com/Cloudiu9/movieflix",
+    demo: "https://disertatie-frontend.vercel.app/",
+    demoNote: "The backend runs on free hosting and may take ~50s to wake up.",
+    image: movieImg,
+    imageAlt:
+      "MovieFlix home page with a featured movie banner and a row of titles",
+  },
+  {
+    title: "Job Listings",
+    description:
+      "A job listings platform with multi-tag filtering across roles, levels, languages and tools. Filter state lives in Redux Toolkit, and list changes are animated with Framer Motion.",
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Redux Toolkit",
+      "Framer Motion",
+    ],
+    github: "https://github.com/Cloudiu9/job-listings",
+    demo: "https://job-listings-chi-ten.vercel.app/",
+    image: jobListingImg,
+    imageAlt: "Job Listings page showing filterable job cards with skill tags",
+  },
+  {
+    title: "Typing Speed Test",
+    description:
+      "A typing speed test that calculates live WPM and accuracy as you type. Includes three difficulty levels, two game modes and a personal best saved in localStorage.",
+    tech: ["TypeScript", "Tailwind CSS", "Vitest", "localStorage"],
+    github: "https://github.com/Cloudiu9/TypingSpeed",
+    demo: "https://typingspeed-cyan.vercel.app/",
+    image: typingSpeedImg,
+    imageAlt:
+      "Typing Speed Test showing a passage of text with live WPM, accuracy and time",
+    imageCenter: true,
+  },
+  {
+    title: "WebScraperLLM",
+    label: "University project",
+    description:
+      "Scrapes and structures over a decade of political speeches (Jan 2014 – Nov 2024) with Selenium and BeautifulSoup, with a Streamlit UI and optional LLM processing for structured JSON output.",
+    tech: ["Python", "Selenium", "Beautiful Soup", "Streamlit", "Groq"],
+    github: "https://github.com/Cloudiu9/WebScraperLLM",
+    image: scraperImg,
+    imageAlt: "WebScraperLLM Streamlit interface with scraping options",
+  },
+];
+
 export default function Projects() {
-  const projects = [
-    {
-      title: "MovieFlix",
-      description:
-        "Full-stack movie and TV recommendation platform; my Master's dissertation. Catalogues 4,000+ titles and serves hybrid ML recommendations (content-based, collaborative, cold-start). Built with React, TypeScript, Tailwind CSS, Flask, and MongoDB Atlas. Takes ~20s to boot up on launch.",
-      tech: [
-        "React",
-        "TypeScript",
-        "Tailwind CSS",
-        "Flask",
-        "MongoDB",
-        "scikit-learn",
-        "JWT",
-        "Groq",
-      ],
-      links: [
-        { github: "https://github.com/Cloudiu9/Disertatie" },
-        { demo: "https://disertatie-frontend.vercel.app/" },
-      ],
-      image: movieImg,
-    },
-    {
-      title: "Job Listings",
-      description:
-        "A job listings platform built with Next.js, TypeScript, Tailwind CSS, and Redux Toolkit. Features multi-tag filtering, global filter state management, and animated layout updates using Framer Motion.",
-      tech: [
-        "Next.js",
-        "TypeScript",
-        "Tailwind CSS",
-        "Redux Toolkit",
-        "Framer Motion",
-      ],
-      links: [
-        { github: "https://github.com/Cloudiu9/job-listings" },
-        { demo: "https://job-listings-chi-ten.vercel.app/" },
-      ],
-      image: jobListingImg,
-    },
-    {
-      title: "Typing Speed Test",
-      description:
-        "A responsive typing speed test built with TypeScript and Tailwind CSS. Features multiple difficulty levels and modes, real-time WPM and accuracy tracking, mistake correction, keyboard handling, and persistent settings using localStorage.",
-      tech: ["TypeScript", "Tailwind CSS", "Vitest", "localStorage"],
-      links: [
-        { github: "https://github.com/Cloudiu9/TypingSpeed" },
-        { demo: "https://typingspeed-cyan.vercel.app/" },
-      ],
-      image: typingSpeedImg,
-    },
-    {
-      title: "Memory Card League",
-      description:
-        "A React memory card game built as part of The Odin Project coursework. Picks a random set of League of Legends champions across three difficulty levels and reshuffles the deck on every click. Built to practice hooks and state management.",
-      tech: ["React", "JavaScript", "Tailwind CSS"],
-      links: [
-        { github: "https://github.com/Cloudiu9/MemoryCard" },
-        { demo: "https://memorycardleague.netlify.app/" },
-      ],
-      image: memoryImg,
-    },
-    {
-      title: "Shopping Cart",
-      description:
-        "A React e-commerce UI with a working cart, product browsing, and quantity management. Focused on component architecture and state flow.",
-      tech: ["React", "JavaScript", "Tailwind CSS"],
-      links: [
-        { github: "https://github.com/Cloudiu9/Shopping-Cart" },
-        { demo: "https://shopping-cart-tau-khaki.vercel.app/" },
-      ],
-      image: shoppingImg,
-    },
-    {
-      title: "WebScraperLLM",
-      description:
-        "A university course project that scraped and structured over a decade of political speeches (Jan 2014 - Nov 2024) using Selenium and BeautifulSoup, with a Streamlit UI and optional LLM processing for structured JSON output.",
-      tech: ["Python", "Selenium", "Beautiful Soup", "Streamlit", "Groq"],
-      links: [{ github: "https://github.com/Cloudiu9/WebScraperLLM" }],
-      // bg-[url('./assets/Eu.png')]
-      image: scraperImg,
-    },
-  ];
+  const [featured, ...others] = projects;
 
   return (
-    <div
-      id="projects"
-      className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto my-16"
-    >
-      {projects.map((project, idx) => (
-        <ProjectCard project={project} key={idx} />
-      ))}
-    </div>
+    <section id="projects" className="py-24 md:px-10">
+      <div className="mb-16">
+        <p className="mb-3 text-sm text-sky-300 uppercase tracking-[0.5em]">
+          Projects
+        </p>
+      </div>
+      <div className="flex justify-center mb-12">
+        <h2 className="text-3xl font-semibold leading-tight text-white md:text-5xl">
+          Selected work
+        </h2>
+      </div>
+
+      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <ProjectCard project={featured} featured />
+        {others.map((project) => (
+          <ProjectCard project={project} key={project.title} />
+        ))}
+      </div>
+    </section>
   );
 }

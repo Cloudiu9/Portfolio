@@ -1,7 +1,9 @@
 # Claudiu Bordea — Portfolio
 
 Personal portfolio site built with React, Vite, and Tailwind CSS.
-Live at: https://portfolio-beta-liart-55.vercel.app/
+Live at: <https://portfolio-beta-liart-55.vercel.app/>
+
+![Portfolio screenshot](./public/screenshot.png)
 
 ## About
 
@@ -13,24 +15,26 @@ as a front-end developer, the aesthetic being a play on my name (Claudiu → Clo
 - React
 - Vite
 - Tailwind CSS
+- react-scroll (smooth scrolling and active-section nav)
 
 ## Features
 
 - Responsive single-page layout
-- Animated cloud SVG section divider
-- Frosted glass project cards with floating tech stack pills
-- Project showcase with live demo and GitHub links
+- Sticky navigation that highlights the section you're viewing
+- Animated cloud SVG section dividers (disabled for users who prefer reduced motion)
+- Featured project card plus frosted glass project cards with live demo and GitHub links
+- Experience and education overview
 
 ## Projects Featured
 
 - **MovieFlix** — Full-stack ML-powered movie recommendation platform (Master's dissertation)
-- **MemoryCardLeague** — React memory card game built during The Odin Project
-- **ShoppingCart** — React e-commerce UI
+- **Job Listings** — Next.js job board with multi-tag filtering and Redux Toolkit
+- **Typing Speed Test** — TypeScript typing test with live WPM and accuracy
 - **WebScraperLLM** — Political speech scraper with LLM processing (university project)
 
 ## Running Locally
 
-```bash
+```
 npm install
 npm run dev
 ```
